@@ -4,12 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
     <title>Driving Licence Overlay</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
         }
 
         .container {
@@ -47,7 +54,7 @@
         }
 
         .dl-number {
-            top: 4rem;
+            top: 3.8rem;
             left: 5rem;
         }
 
@@ -62,39 +69,43 @@
         }
 
         .name {
-            top: 9.4rem;
+            top: 9.3rem;
             left: 3rem;
         }
 
         .dob {
-            top: 10.4rem;
+            top: 10.2rem;
             left: 5.5rem;
         }
 
         .father-name {
-            top: 11.2rem;
+            top: 11.1rem;
             left: 8rem;
         }
 
         .blood-group {
-            top: 10.3rem;
+            top: 10.2rem;
             left: 13.8rem;
         }
 
         .organ-donor {
-            top: 10.3rem;
+            top: 10.2rem;
             left: 19.5rem;
         }
 
         .address {
-            top: 12.3rem;
+            top: 12.2rem;
             left: 3.5rem;
             width: 15rem;
+            position: absolute;
+            font-size: 0.6rem;
+            /* font-weight: bold; */
+            color: black;
         }
 
         .first-issue-date {
-            top: 5.8rem;
-            right: 24.5rem;
+            top: 5.4rem;
+            right: 24.1rem;
             transform: rotate(270deg);
         }
 
@@ -125,7 +136,7 @@
         }
 
         .DL_no {
-            top: 1.2rem;
+            top: 1.1rem;
             left: 28.5rem;
             /* font-size: 0.8rem; */
         }
@@ -137,12 +148,12 @@
 
         .hazardous-validity {
             top: 4.8rem;
-            left: 32.8rem;
+            left: 32.9rem;
         }
 
         .hill-validity {
             top: 4.8rem;
-            right: 2.9rem;
+            right: 2.2rem;
         }
 
         .vehicle-table {
@@ -158,21 +169,24 @@
         }
 
         .mobile-number {
-            top: 13.4rem;
+            top: 13.27rem;
             left: 31.5rem;
         }
+
         tr:nth-child(1) td {
-            padding-top: .2rem;
+            padding-top: .1rem;
             width: 12.5%;
-        }   
+        }
+
         tr:nth-child(2) td {
-            padding-top: .2rem;
+            padding-top: .13rem;
             width: 12.5%;
-        }   
+        }
+
         tr:nth-child(3) td {
-            padding-top: .3rem;
+            padding-top: .1rem;
             width: 12.5%;
-        }   
+        }
     </style>
 </head>
 
@@ -188,7 +202,7 @@
             <div class="text father-name" id="fatherName">ABRAR</div>
             <div class="text blood-group" id="bloodGroup">B+</div>
             <div class="text organ-donor" id="organDonor">No</div>
-            <div class="text address" id="address">MALL GODAM ROAD MAHARA DARWAJA, Etah, Uttar Pradesh 207001</div>
+            <div class=" address" id="address">MALL GODAM ROAD MAHARA DARWAJA, Etah, Uttar Pradesh 207001</div>
             <div class="text first-issue-date" id="firstIssueDate">03-08-2024</div>
             <div class="photo" id="photo"></div>
             <div class="sign" id="sign"></div>
@@ -201,34 +215,34 @@
                 <table style='width: 100%; text-align: center; border-collapse: collapse;table-layout: fixed;'>
                     <tbody>
                         <tr>
-                            <td class="text3" >Class</td>
-                            <td class="text3" >Code</td>
-                            <td class="text3" >Issued By</td>
-                            <td class="text3" >Date of Issue</td>
-                            <td class="text3" >Category</td>
-                            <td class="text3" >Badge</td>
-                            <td class="text3" >Badge</td>
-                            <td class="text3" >Badge</td>
+                            <td class="text3">Class</td>
+                            <td class="text3">Code</td>
+                            <td class="text3">Issued By</td>
+                            <td class="text3">Date of Issue</td>
+                            <td class="text3">Category</td>
+                            <td class="text3">Badge</td>
+                            <td class="text3">Badge</td>
+                            <td class="text3">Badge</td>
                         </tr>
                         <tr>
-                            <td class="text3" >Class</td>
-                            <td class="text3" >Code</td>
-                            <td class="text3" >Issued By</td>
-                            <td class="text3" >Date of Issue</td>
-                            <td class="text3" >Category</td>
-                            <td class="text3" >Badge</td>
-                            <td class="text3" >Badge</td>
-                            <td class="text3" >Badge</td>
+                            <td class="text3">Class</td>
+                            <td class="text3">Code</td>
+                            <td class="text3">Issued By</td>
+                            <td class="text3">Date of Issue</td>
+                            <td class="text3">Category</td>
+                            <td class="text3">Badge</td>
+                            <td class="text3">Badge</td>
+                            <td class="text3">Badge</td>
                         </tr>
                         <tr>
-                            <td class="text3" >Class</td>
-                            <td class="text3" >Code</td>
-                            <td class="text3" >Issued By</td>
-                            <td class="text3" >Date of Issue</td>
-                            <td class="text3" >Category</td>
-                            <td class="text3" >Badge</td>
-                            <td class="text3" >Badge</td>
-                            <td class="text3" >Badge</td>
+                            <td class="text3">Class</td>
+                            <td class="text3">Code</td>
+                            <td class="text3">Issued By</td>
+                            <td class="text3">Date of Issue</td>
+                            <td class="text3">Category</td>
+                            <td class="text3">Badge</td>
+                            <td class="text3">Badge</td>
+                            <td class="text3">Badge</td>
                         </tr>
                     </tbody>
                 </table>
