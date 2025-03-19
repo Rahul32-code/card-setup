@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving Licence Overlay</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            position: relative;
+            width: 50rem;
+            height: auto;
+        }
+
+        .container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .text2 {
+            position: absolute;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: black;
+        }
+
+        .text {
+            position: absolute;
+            font-size: 0.6rem;
+            font-weight: bold;
+            color: black;
+        }
+
+        .dl-number {
+            top: 4rem;
+            left: 5rem;
+        }
+
+        .issue-date {
+            top: 6.2rem;
+            left: 5rem;
+        }
+
+        .validity {
+            top: 6.2rem;
+            left: 9.8rem;
+        }
+
+        .name {
+            top: 9.4rem;
+            left: 3rem;
+        }
+
+        .dob {
+            top: 10.4rem;
+            left: 5.5rem;
+        }
+
+        .father-name {
+            top: 11.5rem;
+            left: 8rem;
+        }
+
+        .blood-group {
+            top: 10.3rem;
+            left: 13.8rem;
+        }
+
+        .organ-donor {
+            top: 10.3rem;
+            left: 19.5rem;
+        }
+
+        .address {
+            top: 12.3rem;
+            left: 3.5rem;
+            width: 15rem;
+        }
+
+        .first-issue-date {
+            top: 5.8rem;
+            right: 24.5rem;
+            transform: rotate(270deg);
+        }
+
+        .photo {
+            position: absolute;
+            top: 3.5rem;
+            right: 26.8rem;
+            width: 3.3rem;
+            height: 4rem;
+            background: gray;
+        }
+
+        .sign {
+            position: absolute;
+            top: 7.8rem;
+            right: 26.4rem;
+            width: 5rem;
+            height: 1.8rem;
+            background: gray;
+        }
+
+        .qr-code {
+            top: 2rem;
+            left: 26.8rem;
+            width: 4.6rem;
+            height: 4.8rem;
+            background: gray;
+        }
+
+        .DL_no {
+            top: 1.2rem;
+            left: 28.5rem;
+            /* font-size: 0.8rem; */
+        }
+
+        .reg_NO {
+            top: 2rem;
+            left: 36.3rem;
+        }
+
+        .hazardous-validity {
+            top: 4.8rem;
+            left: 32.8rem;
+        }
+
+        .hill-validity {
+            top: 4.8rem;
+            right: 2.9rem;
+        }
+
+        .vehicle-table {
+            top: 8.3rem;
+            left: 26.9rem;
+            width: 22rem;
+        }
+
+        .text3 {
+            font-size: 0.4rem;
+            font-weight: bold;
+            color: black;
+        }
+
+        .mobile-number {
+            top: 13.4rem;
+            left: 31.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="1.png" alt="Driving Licence">
+        <div class="overlay">
+            <div class="text2 dl-number" id="dlNumber">UP82 20240008659</div>
+            <div class="text issue-date" id="issueDate">03-08-2024</div>
+            <div class="text validity" id="validity">02-01-2042</div>
+            <div class="text name" id="name">ARBAZ</div>
+            <div class="text dob" id="dob">03-01-2002</div>
+            <div class="text father-name" id="fatherName">ABRAR</div>
+            <div class="text blood-group" id="bloodGroup">B+</div>
+            <div class="text organ-donor" id="organDonor">No</div>
+            <div class="text address" id="address">MALL GODAM ROAD MAHARA DARWAJA, Etah, Uttar Pradesh 207001</div>
+            <div class="text first-issue-date" id="firstIssueDate">03-08-2024</div>
+            <div class="photo" id="photo"></div>
+            <div class="sign" id="sign"></div>
+            <div class="text qr-code" id="qrCode"></div>
+            <div class="text DL_no">UP82 20240008659</div>
+            <div class="text reg_NO">(REGn.Number)</div>
+            <div class="text hazardous-validity" id="hazardousValidity">Hazardous Validity Details</div>
+            <div class="text hill-validity" id="hillValidity">Hill Validity Detail</div>
+            <div class="text vehicle-table" id="vehicleTable">
+                <table style='width: 100%; text-align: center; border-collapse: collapse;table-layout: fixed;'>
+                    <tbody>
+                        <tr style="">
+                            <td class="text3" style="width: 12.5%; padding-top: .2rem;">Class</td>
+                            <td class="text3" style="width: 12.5%; padding-top: .2rem;">Code</td>
+                            <td class="text3" style="width: 12.5%; padding-top: .2rem;">Issued By</td>
+                            <td class="text3" style="width: 12.5%; padding-top: .2rem;">Date of Issue</td>
+                            <td class="text3" style="width: 12.5%; padding-top: .2rem;">Category</td>
+                            <td class="text3" style="width: 12.5%; padding-top: .2rem;">Badge</td>
+                            <td class="text3" style="width: 12.5%; padding-top: .2rem;">Badge</td>
+                            <td class="text3" style="width: 12.5%; padding-top: .2rem;">Badge</td>
+                        </tr>
+                        <tr>
+                            <td class="text3" style="width: 12.5%; padding-top: .2rem;">Class</td>
+                            <td class="text3" style="width: 12.5%; padding-top: .2rem;">Code</td>
+                            <td class="text3" style="width: 12.5%; padding-top: .2rem;">Issued By</td>
+                            <td class="text3" style="width: 12.5%; padding-top: .2rem;">Date of Issue</td>
+                            <td class="text3" style="width: 12.5%; padding-top: .2rem;">Category</td>
+                            <td class="text3" style="width: 12.5%; padding-top: .2rem;">Badge</td>
+                            <td class="text3" style="width: 12.5%; padding-top: .2rem;">Badge</td>
+                            <td class="text3" style="width: 12.5%; padding-top: .2rem;">Badge</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text mobile-number" id="mobileNumber">999999999</div>
+        </div>
+    </div>
+    <script>
+        const data = {
+            photo: "photo.png",
+            sign: "sign.png",
+            qrCode: "qr.png",
+        };
+
+        document.getElementById("photo").style.backgroundImage = `url(${data.photo})`;
+        document.getElementById("sign").style.backgroundImage = `url(${data.sign})`;
+        document.getElementById("qrCode").style.backgroundImage = `url(${data.qrCode})`;
+    </script>
+</body>
+
+</html>
